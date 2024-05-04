@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --Nutmeg: hsl(14, 45%, 36%);
+  --DarkRaspberry: hsl(332, 51%, 32%);
+
+  White: hsl(0, 0%, 100%);
+  --RoseWhite: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --LightGrey: hsl(30, 18%, 87%);
+  --WengeBrown: hsl(30, 10%, 34%);
+  --DarkCharcoal: hsl(24, 5%, 18%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+img {
+  width: 100%;
+  display: block;
+}
+ul {
+  list-style: disc;
+}
+ol {list-style: decimal;}
+ul li::marker {
+  color: var(--Nutmeg);
+  font-size: 12px;
+}
+ol li::marker {
+  color: var(--Nutmeg);
+  font-size: 1rem;
+  font-weight: bold;
+}
+body {
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+text-decoration: none;
+}
+.wrapper {
+/* padding-left: 15px;
+padding-right: 15px; */
+margin-left: auto;
+margin-right: auto;
+}
+/* for large screens */
+@media (width < 768px) {
+    .wrapper {
+        width: 750px;
+    }
+}
+/* for medium screens */
+@media (width < 992px) {
+    .wrapper {
+        width: 970px;
+    }
+}
+/* for small screens */
+@media (width < 1200px) {
+    .wrapper {
+        width: 1170px;
+    }
+}
+
+@media (width < 1199px) {
+  main {
+    width: 90% !important;
+  }
+}
